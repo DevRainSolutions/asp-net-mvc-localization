@@ -10,7 +10,7 @@ namespace asp_net_mvc_localization.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return Redirect("/User/Create");
         }
 
         public ActionResult About()

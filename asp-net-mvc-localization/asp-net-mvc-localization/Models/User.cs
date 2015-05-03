@@ -6,14 +6,14 @@ namespace asp_net_mvc_localization.Models
 {
     public class TestUser
     {
-        [Required(ErrorMessageResourceName="Required", ErrorMessageResourceType=typeof(Resources.ValidationResources))]
+        [Required]
         public string Username { get; set; }
 
         [Required]
         [EmailAddress]
         public string Email { get; set; }
-
-        [LocalizedRequired()]
+        
+        [Required]
         [MinLength(6)]
         [MaxLength(64)]
         public string Password { get; set; }
@@ -23,7 +23,7 @@ namespace asp_net_mvc_localization.Models
 
         public DateTime Birthday { get; set; }
 
-        [LocalizedRequired]
+        [Required]
         [Range(0.1, 9.9)]
         public double rand { get; set; }
     }

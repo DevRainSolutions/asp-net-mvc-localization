@@ -117,7 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="MaxLength" xml:space="preserve">
+    <value>Поле {0} повинно бути рядком з максимальною довжиною: '{1}'</value>
+  </data>
+  <data name="MinLength" xml:space="preserve">
+    <value>Поле {0} повинно бути рядком з мінімальною довжиною: '{1}'</value>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>Поле {0} повинно бути між {1} та {2}</value>
+  </data>
+  <data name="RegularExpression" xml:space="preserve">
+    <value>Невірно</value>
+  </data>
   <data name="Required" xml:space="preserve">
-    <value>Обов'язкове!</value>
+    <value>Поле {0} обов'язкове</value>
   </data>
 </root>

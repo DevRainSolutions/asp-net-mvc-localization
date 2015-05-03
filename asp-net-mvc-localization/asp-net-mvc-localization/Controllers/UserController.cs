@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Globalization;
 using asp_net_mvc_localization.Models;
+using System.ComponentModel.DataAnnotations;
+using asp_net_mvc_localization.Utils;
 
 namespace asp_net_mvc_localization.Controllers
 {
@@ -13,7 +15,6 @@ namespace asp_net_mvc_localization.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            //System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo(System.Configuration.ConfigurationManager.AppSettings["culture"]);//For test!
             TestUser tUser = new TestUser();
             return View(tUser);
         }
