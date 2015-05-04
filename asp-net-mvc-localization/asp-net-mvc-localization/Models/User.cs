@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using asp_net_mvc_localization.Utils;
 using System;
 
 namespace asp_net_mvc_localization.Models
