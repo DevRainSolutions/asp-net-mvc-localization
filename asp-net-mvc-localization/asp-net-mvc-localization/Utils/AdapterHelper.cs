@@ -6,15 +6,20 @@ using System.Web;
 
 namespace asp_net_mvc_localization.Utils
 {
+    /// <summary>
+    /// Contain additional methods
+    /// </summary>
     public static class AdapterHelper
     {
+        /// <summary>
+        /// Setting ErrorMessageResource fields that provide localization for ValidationAttribute
+        /// </summary>
+        /// <param name="attribute">attribute that will be setting</param>
         public static void ChangeAttribute(ValidationAttribute attribute)
         {
-            attribute.ErrorMessageResourceType = typeof(Resources.ValidationResources);
+            attribute.ErrorMessageResourceType = typeof(Resources.AttributeResources);
             Type attributeType = attribute.GetType();
-            string resName = attributeType.Name;
-            resName = resName.Remove(resName.LastIndexOf("A"));
-            attribute.ErrorMessageResourceName = resName;
+            attribute.ErrorMessageResourceName = attributeType.Name;
         }
     }
 }

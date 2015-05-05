@@ -15,15 +15,25 @@ namespace asp_net_mvc_localization.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            TestUser tUser = new TestUser();
+            User tUser = new User();
             return View(tUser);
         }
 
-        public ActionResult Create(TestUser tUser)
+        public ActionResult Create(User tUser)
         {
             if (ModelState.IsValid)
                 return Redirect("/");
             return View(tUser);
+        }
+
+        public ActionResult ChangeCulture(string lang, string returnUrl)
+        {
+            var langCookie = new HttpCookie("lang", lang)
+            {
+                HttpOnly = true
+            };
+            Response.AppendCookie(langCookie);
+            return Redirect(returnUrl);
         }
     }
 }

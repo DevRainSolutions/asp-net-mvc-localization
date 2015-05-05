@@ -41,29 +41,35 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="App_GlobalResources\ValidationResources.Designer.cs">
+    <Compile Include="App_GlobalResources\Global.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ValidationResources.resx</DependentUpon>
+      <DependentUpon>Global.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\ValidationResources.uk.Designer.cs">
+    <Compile Include="App_GlobalResources\Global.uk.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ValidationResources.uk.resx</DependentUpon>
+      <DependentUpon>Global.uk.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\AttributeResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttributeResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\AttributeResources.uk.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttributeResources.uk.resx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -79,9 +85,17 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EmbeddedResource Include="App_GlobalResources\ValidationResources.uk.resx">
+    <Content Include="App_GlobalResources\Global.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Global.uk.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.uk.designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="App_GlobalResources\AttributeResources.uk.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ValidationResources.uk.Designer.cs</LastGenOutput>
+      <LastGenOutput>AttributeResources.uk.Designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization.Resources</CustomToolNamespace>
     </EmbeddedResource>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -107,25 +121,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
-    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
-    <Content Include="Views\Account\ConfirmEmail.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ForgotPassword.cshtml" />
-    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Manage.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ResetPassword.cshtml" />
-    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\User\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -139,9 +135,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="App_GlobalResources\ValidationResources.resx">
+    <EmbeddedResource Include="App_GlobalResources\AttributeResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ValidationResources.Designer.cs</LastGenOutput>
+      <LastGenOutput>AttributeResources.Designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization.Resources</CustomToolNamespace>
     </EmbeddedResource>
   </ItemGroup>
@@ -192,6 +188,9 @@
     <Reference Include="Microsoft.Owin.Security.Google">
       <HintPath>..\packages\Microsoft.Owin.Security.Google.2.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="ModelMetadataExtensions">
+      <HintPath>..\packages\ModelMetadataExtensions.0.1.2\lib\net40\ModelMetadataExtensions.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

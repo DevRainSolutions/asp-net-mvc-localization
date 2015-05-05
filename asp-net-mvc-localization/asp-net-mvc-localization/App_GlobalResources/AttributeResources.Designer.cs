@@ -22,14 +22,14 @@ namespace asp_net_mvc_localization.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ValidationResources {
+    public class AttributeResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ValidationResources() {
+        internal AttributeResources() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace asp_net_mvc_localization.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("asp_net_mvc_localization.App_GlobalResources.ValidationResources", typeof(ValidationResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("asp_net_mvc_localization.App_GlobalResources.AttributeResources", typeof(AttributeResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,47 +61,110 @@ namespace asp_net_mvc_localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Age.
+        /// </summary>
+        public static string Age {
+            get {
+                return ResourceManager.GetString("Age", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Birthday.
+        /// </summary>
+        public static string Birthday {
+            get {
+                return ResourceManager.GetString("Birthday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        public static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The {0} field is not a valid e-mail address..
+        /// </summary>
+        public static string EmailAttribute {
+            get {
+                return ResourceManager.GetString("EmailAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The field {0} must be a string with a maximum length of &apos;{1}&apos;..
         /// </summary>
-        public static string MaxLength {
+        public static string MaxLengthAttribute {
             get {
-                return ResourceManager.GetString("MaxLength", resourceCulture);
+                return ResourceManager.GetString("MaxLengthAttribute", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to The field {0} must be a string with a minimum length of &apos;{1}&apos;..
         /// </summary>
-        public static string MinLength {
+        public static string MinLengthAttribute {
             get {
-                return ResourceManager.GetString("MinLength", resourceCulture);
+                return ResourceManager.GetString("MinLengthAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string Password {
+            get {
+                return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Random number.
+        /// </summary>
+        public static string Rand {
+            get {
+                return ResourceManager.GetString("Rand", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to The field {0} must be between {1} and {2}..
         /// </summary>
-        public static string Range {
+        public static string RangeAttribute {
             get {
-                return ResourceManager.GetString("Range", resourceCulture);
+                return ResourceManager.GetString("RangeAttribute", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Incorrect.
         /// </summary>
-        public static string RegularExpression {
+        public static string RegularExpressionAttribute {
             get {
-                return ResourceManager.GetString("RegularExpression", resourceCulture);
+                return ResourceManager.GetString("RegularExpressionAttribute", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Required field {0}.
         /// </summary>
-        public static string Required {
+        public static string RequiredAttribute {
             get {
-                return ResourceManager.GetString("Required", resourceCulture);
+                return ResourceManager.GetString("RequiredAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        public static string Username {
+            get {
+                return ResourceManager.GetString("Username", resourceCulture);
             }
         }
     }

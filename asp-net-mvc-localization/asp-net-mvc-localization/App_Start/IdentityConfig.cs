@@ -8,7 +8,7 @@ using asp_net_mvc_localization.Models;
 namespace asp_net_mvc_localization
 {
     // Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.
-
+    /*
     public class ApplicationUserManager : UserManager<ApplicationUser>
     {
         public ApplicationUserManager(IUserStore<ApplicationUser> store)
@@ -71,6 +71,8 @@ namespace asp_net_mvc_localization
         {
             // Plug in your sms service here to send a text message.
             return Task.FromResult(0);
-        }
+     
+     }
     }
+     */
 }
