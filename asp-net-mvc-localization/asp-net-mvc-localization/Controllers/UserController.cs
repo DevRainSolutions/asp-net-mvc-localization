@@ -26,6 +26,7 @@ namespace asp_net_mvc_localization.Controllers
             return View(tUser);
         }
 
+        [HttpGet]
         public ActionResult ChangeCulture(string lang, string returnUrl)
         {
             var langCookie = new HttpCookie("lang", lang)
