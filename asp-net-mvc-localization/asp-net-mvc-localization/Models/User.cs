@@ -11,7 +11,8 @@ namespace asp_net_mvc_localization.Models
 
         [Display]
         [Required]
-        [EmailAddress]
+        [EmailAddress(ErrorMessageResourceName = "EmailAttribute", 
+            ErrorMessageResourceType = typeof(Resources.AttributeResources))]
         public string Email { get; set; }
         
         [Display]

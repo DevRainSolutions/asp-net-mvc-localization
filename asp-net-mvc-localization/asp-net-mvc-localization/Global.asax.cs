@@ -30,25 +30,27 @@ namespace asp_net_mvc_localization
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RangeAttribute), typeof(MyRangeAttributeAdapter));
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MinLengthAttribute), typeof(MyMinLengthAttributeAdapter));
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MaxLengthAttribute), typeof(MyMaxLengthAttributeAdapter));
-            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RegularExpressionAttribute), typeof(MyRegularExpressionAttributeAdapter)); 
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RegularExpressionAttribute), typeof(MyRegularExpressionAttributeAdapter));
+            //DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(EmailAddressAttribute), typeof(MyEmailAttributeAdapter)); 
             
 
             //Using universal Adapter, without client-side validation, because EmailAddressAttributeAdapter is not exist
-            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(EmailAddressAttribute), typeof(ValidationAttributeAdapter));
+            //DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(EmailAddressAttribute), typeof(ValidationAttributeAdapter));
             
             /*
             //Provide ValidationAttributes localization without client-side validation
-            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RequiredAttribute), typeof(ValidationAttributeAdapter));
-            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RangeAttribute), typeof(ValidationAttributeAdapter));
-            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MinLengthAttribute), typeof(ValidationAttributeAdapter));
-            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MaxLengthAttribute), typeof(ValidationAttributeAdapter));
-            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RegularExpressionAttribute), typeof(ValidationAttributeAdapter)); 
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RequiredAttribute), typeof(AttributeAdapters2.MySecRequiredAttributeAdapter));
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RangeAttribute), typeof(AttributeAdapters2.MySecRangeAttributeAdapter));
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MinLengthAttribute), typeof(AttributeAdapters2.MySecMinLengthAttributeAdapter));
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MaxLengthAttribute), typeof(AttributeAdapters2.MySecMaxLengthAttributeAdapter));
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RegularExpressionAttribute), typeof(AttributeAdapters2.MySecRegularExpressionAttributeAdapter)); 
             */
 
             //Provide DisplayAttribute localization
             ModelMetadataProviders.Current = new ConventionalModelMetadataProvider(false, typeof (AttributeResources));
-
+            
             ClientDataTypeModelValidatorProvider.ResourceClassKey = "AttributeResources";
+            DefaultModelBinder.ResourceClassKey = "AttributeResources";
         }
 
         protected void Application_AcquireRequestState(object sender, EventArgs e)

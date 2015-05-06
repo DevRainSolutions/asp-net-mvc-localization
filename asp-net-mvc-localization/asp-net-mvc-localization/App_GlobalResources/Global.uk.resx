@@ -120,4 +120,13 @@
   <data name="AppName" xml:space="preserve">
     <value>Мій ASP.NET Додаток</value>
   </data>
+  <data name="Back" xml:space="preserve">
+    <value>Назад до списку</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Створити</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Користувач</value>
+  </data>
 </root>

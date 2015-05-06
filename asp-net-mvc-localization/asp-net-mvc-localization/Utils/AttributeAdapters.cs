@@ -8,31 +8,30 @@ using System.Web;
 
 namespace asp_net_mvc_localization.Utils
 {
-    /*
-     * http://stackoverflow.com/questions/4749657/client-side-validation-does-not-work-when-inherting-from-requiredattribute-in-as
-     */
-
     /// <summary>
-    /// Universal Adapter for each ValidationAttribute
-    /// Does not support client validation :(
+    /// Base abstract class that contains settings of ErrorMessage fields.
     /// </summary>
-    public class ValidationAttributeAdapter : DataAnnotationsModelValidator<ValidationAttribute>
+    /// <typeparam name="T">Type of Attribute that adapts</typeparam>
+    public abstract class BaseDataAnnotationsModelValidator<T>
+        : DataAnnotationsModelValidator<T> where T : ValidationAttribute
     {
-        public ValidationAttributeAdapter(ModelMetadata metadata,
+        protected BaseDataAnnotationsModelValidator(
+            ModelMetadata metadata,
             ControllerContext context,
-            ValidationAttribute attribute)
+            T attribute)
             : base(metadata, context, attribute)
         {
-            AdapterHelper.ChangeAttribute(attribute);
+            attribute.ErrorMessageResourceType = typeof(Resources.AttributeResources);
+            Type attributeType = attribute.GetType();
+            attribute.ErrorMessageResourceName = attributeType.Name;
         }
     }
 
     /// <summary>
     /// Adapters that provide localization for Validation Attributes
-    /// Supports client validation
     /// </summary>
     #region ValidationAttribute Adapters
-    public class MyRequiredAttributeAdapter : RequiredAttributeAdapter
+    public class MyRequiredAttributeAdapter : BaseDataAnnotationsModelValidator<RequiredAttribute>
     {
         public MyRequiredAttributeAdapter(
             ModelMetadata metadata,
@@ -40,11 +39,10 @@ namespace asp_net_mvc_localization.Utils
             RequiredAttribute attribute)
             :base(metadata, context, attribute)
         {
-            AdapterHelper.ChangeAttribute(attribute);
         }
     }
 
-    public class MyMinLengthAttributeAdapter : MinLengthAttributeAdapter
+    public class MyMinLengthAttributeAdapter : BaseDataAnnotationsModelValidator<MinLengthAttribute>
     {
         public MyMinLengthAttributeAdapter(
             ModelMetadata metadata,
@@ -52,11 +50,10 @@ namespace asp_net_mvc_localization.Utils
             MinLengthAttribute attribute)
             : base(metadata, context, attribute)
         {
-            AdapterHelper.ChangeAttribute(attribute);
         }
     }
 
-    public class MyMaxLengthAttributeAdapter : MaxLengthAttributeAdapter
+    public class MyMaxLengthAttributeAdapter : BaseDataAnnotationsModelValidator<MaxLengthAttribute>
     {
         public MyMaxLengthAttributeAdapter(
             ModelMetadata metadata,
@@ -64,11 +61,10 @@ namespace asp_net_mvc_localization.Utils
             MaxLengthAttribute attribute)
             : base(metadata, context, attribute)
         {
-            AdapterHelper.ChangeAttribute(attribute);
         }
     }
 
-    public class MyRangeAttributeAdapter : RangeAttributeAdapter
+    public class MyRangeAttributeAdapter : BaseDataAnnotationsModelValidator<RangeAttribute>
     {
         public MyRangeAttributeAdapter(
             ModelMetadata metadata,
@@ -76,11 +72,10 @@ namespace asp_net_mvc_localization.Utils
             RangeAttribute attribute)
             : base(metadata, context, attribute)
         {
-            AdapterHelper.ChangeAttribute(attribute);
         }
     }
 
-    public class MyRegularExpressionAttributeAdapter : RegularExpressionAttributeAdapter
+    public class MyRegularExpressionAttributeAdapter : BaseDataAnnotationsModelValidator<RegularExpressionAttribute>
     {
         public MyRegularExpressionAttributeAdapter(
             ModelMetadata metadata,
@@ -88,7 +83,17 @@ namespace asp_net_mvc_localization.Utils
             RegularExpressionAttribute attribute)
             : base(metadata, context, attribute)
         {
-            AdapterHelper.ChangeAttribute(attribute);
+        }
+    }
+
+    public class MyEmailAttributeAdapter : BaseDataAnnotationsModelValidator<EmailAddressAttribute>
+    {
+        public MyEmailAttributeAdapter(
+            ModelMetadata metadata,
+            ControllerContext context,
+            EmailAddressAttribute attribute)
+            : base(metadata, context, attribute)
+        {
         }
     }
     #endregion
