@@ -31,11 +31,11 @@ namespace asp_net_mvc_localization
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MinLengthAttribute), typeof(MyMinLengthAttributeAdapter));
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MaxLengthAttribute), typeof(MyMaxLengthAttributeAdapter));
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RegularExpressionAttribute), typeof(MyRegularExpressionAttributeAdapter));
-            //DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(EmailAddressAttribute), typeof(MyEmailAttributeAdapter)); 
+            //DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MyEmailAddressAttribute), typeof(MyEmailAttributeAdapter)); 
             
 
             //Using universal Adapter, without client-side validation, because EmailAddressAttributeAdapter is not exist
-            //DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(EmailAddressAttribute), typeof(ValidationAttributeAdapter));
+            //DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MyEmailAddressAttribute), typeof(ValidationAttributeAdapter));
             
             /*
             //Provide ValidationAttributes localization without client-side validation
