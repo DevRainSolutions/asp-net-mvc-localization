@@ -77,5 +77,11 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval"),
-    @Scripts.Render("~/bundles/messages_uk")
+    @if (Request.Cookies["lang"] != null)
+    {
+        if (Request.Cookies["lang"].Value == "uk")
+        {
+            @Scripts.Render("~/bundles/messages_uk")
+        }
+    }
 }
