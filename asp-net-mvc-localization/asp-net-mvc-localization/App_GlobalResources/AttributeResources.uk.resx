@@ -129,6 +129,12 @@
   <data name="EmailAttribute" xml:space="preserve">
     <value>Поле {0} не є e-mail адресою.</value>
   </data>
+  <data name="FieldMustBeDate" xml:space="preserve">
+    <value>Поле {0} повинно бути датою.</value>
+  </data>
+  <data name="FieldMustBeNumeric" xml:space="preserve">
+    <value>Поле {0} повинно бути числом.</value>
+  </data>
   <data name="MaxLengthAttribute" xml:space="preserve">
     <value>Поле {0} повинно бути рядком з максимальною довжиною: '{1}'.</value>
   </data>
@@ -137,6 +143,9 @@
   </data>
   <data name="Password" xml:space="preserve">
     <value>Пароль</value>
+  </data>
+  <data name="PropertyValueInvalid" xml:space="preserve">
+    <value>Значення '{0}' не коректне для {1}.</value>
   </data>
   <data name="Rand" xml:space="preserve">
     <value>Будь-яке число</value>

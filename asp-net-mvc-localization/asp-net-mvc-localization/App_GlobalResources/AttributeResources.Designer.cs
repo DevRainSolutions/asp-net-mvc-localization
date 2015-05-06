@@ -97,6 +97,24 @@ namespace asp_net_mvc_localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The field {0} must be a date..
+        /// </summary>
+        public static string FieldMustBeDate {
+            get {
+                return ResourceManager.GetString("FieldMustBeDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The field {0} must be a number..
+        /// </summary>
+        public static string FieldMustBeNumeric {
+            get {
+                return ResourceManager.GetString("FieldMustBeNumeric", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The field {0} must be a string with a maximum length of &apos;{1}&apos;..
         /// </summary>
         public static string MaxLengthAttribute {
@@ -120,6 +138,15 @@ namespace asp_net_mvc_localization.Resources {
         public static string Password {
             get {
                 return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The value &apos;{0}&apos; is not valid for {1}..
+        /// </summary>
+        public static string PropertyValueInvalid {
+            get {
+                return ResourceManager.GetString("PropertyValueInvalid", resourceCulture);
             }
         }
         

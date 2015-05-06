@@ -86,15 +86,5 @@ namespace asp_net_mvc_localization.Utils
         }
     }
 
-    public class MyEmailAttributeAdapter : BaseDataAnnotationsModelValidator<EmailAddressAttribute>
-    {
-        public MyEmailAttributeAdapter(
-            ModelMetadata metadata,
-            ControllerContext context,
-            EmailAddressAttribute attribute)
-            : base(metadata, context, attribute)
-        {
-        }
-    }
     #endregion
 }
