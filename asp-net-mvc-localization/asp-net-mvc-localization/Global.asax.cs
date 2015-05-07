@@ -31,7 +31,8 @@ namespace asp_net_mvc_localization
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MinLengthAttribute), typeof(MyMinLengthAttributeAdapter));
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MaxLengthAttribute), typeof(MyMaxLengthAttributeAdapter));
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RegularExpressionAttribute), typeof(MyRegularExpressionAttributeAdapter));
-            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MyEmailAddressAttribute), typeof(MyEmailAddressAttribute)); 
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MyEmailAddressAttribute), typeof(MyEmailAddressAttributeAdapter));
+            //DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MyEmailAddressAttribute), typeof(MyEmailAddressAttribute)); 
             
 
             //Using universal Adapter, without client-side validation, because EmailAddressAttributeAdapter is not exist

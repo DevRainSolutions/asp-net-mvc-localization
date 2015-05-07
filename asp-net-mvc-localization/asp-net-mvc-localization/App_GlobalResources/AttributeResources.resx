@@ -126,9 +126,6 @@
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
-  <data name="EmailAttribute" xml:space="preserve">
-    <value>The {0} field is not a valid e-mail address.</value>
-  </data>
   <data name="FieldMustBeDate" xml:space="preserve">
     <value>The field {0} must be a date.</value>
   </data>
@@ -140,6 +137,9 @@
   </data>
   <data name="MinLengthAttribute" xml:space="preserve">
     <value>The field {0} must be a string with a minimum length of '{1}'.</value>
+  </data>
+  <data name="MyEmailAddressAttribute" xml:space="preserve">
+    <value>The {0} field is not a valid e-mail address.</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>

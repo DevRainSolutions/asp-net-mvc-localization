@@ -126,9 +126,6 @@
   <data name="Email" xml:space="preserve">
     <value>Пошта</value>
   </data>
-  <data name="EmailAttribute" xml:space="preserve">
-    <value>Поле {0} не є e-mail адресою.</value>
-  </data>
   <data name="FieldMustBeDate" xml:space="preserve">
     <value>Поле {0} повинно бути датою.</value>
   </data>
@@ -140,6 +137,9 @@
   </data>
   <data name="MinLengthAttribute" xml:space="preserve">
     <value>Поле {0} повинно бути рядком з мінімальною довжиною: '{1}'.</value>
+  </data>
+  <data name="MyEmailAddressAttribute" xml:space="preserve">
+    <value>Поле {0} не є e-mail адресою.</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Пароль</value>
