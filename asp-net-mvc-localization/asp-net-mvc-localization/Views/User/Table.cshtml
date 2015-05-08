@@ -5,23 +5,36 @@
 
 <script>
     var dataSet = JSON.parse('@Html.Raw(ViewData["list"].ToString())');
+    var localization = JSON.parse('@Html.Raw(ViewData["language"].ToString())');
     $(document).ready(function () {
         $('#users').DataTable({
             data: dataSet,
             columns: [
-                { data: "Username" },
-                { data: "Email" },
-                { data: "Password" },
-                { data: "Age" },
-                { data: "Birthday" },
-                { data: "Rand" }
-            ]
+                { data: "Username", title: '@Resources.TableResources.UsernameTitle' },
+                { data: "Email", title: '@Resources.TableResources.EmailTitle' },
+                { data: "Password", title: '@Resources.TableResources.PasswordTitle' },
+                { data: "Age", title: '@Resources.TableResources.AgeTitle' },
+                { data: "Birthday", title: '@Resources.TableResources.BirthdayTitle' },
+                { data: "Rand", title: '@Resources.TableResources.RandTitle' }
+            ],
+            oLanguage: {
+                oPaginate: {
+                    sNext: '@Resources.TableResources.sNext',
+                    sPrevious: '@Resources.TableResources.sPrevious'
+                },
+                sSearch: '@Resources.TableResources.sSearch',
+                sLengthMenu: '@Resources.TableResources.lengthMenu',
+                sZeroRecords: '@Resources.TableResources.zeroRecords',
+                sInfoEmpy: '@Resources.TableResources.infoEmpty',
+                sInfo: '@Resources.TableResources.info',
+                sInfoFiltered: '@Resources.TableResources.infoFiltered'
+            }
         });
     });
 </script>
 
 <h2>Table</h2>
-<table id="users">
+<table id="users" class="display">
     <thead>
         <tr>
             <th>Name</th>

@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Globalization;
 using asp_net_mvc_localization.Models;
-using System.ComponentModel.DataAnnotations;
-using asp_net_mvc_localization.Utils;
 using Newtonsoft.Json;
+using Resources;
 
 namespace asp_net_mvc_localization.Controllers
 {
