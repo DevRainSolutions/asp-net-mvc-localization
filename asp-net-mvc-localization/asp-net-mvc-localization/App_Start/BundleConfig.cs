@@ -18,7 +18,7 @@ namespace asp_net_mvc_localization
                         "~/Scripts/localization/messages_uk.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/datatables").Include(
-                        "~/Scripts/jquery.dataTables.min.js"));
+                        "~/Scripts/datatables/media/js/jquery.dataTables.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/my").Include(
                         "~/Scripts/my.js"));
@@ -35,7 +35,7 @@ namespace asp_net_mvc_localization
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/Content/jquery.dataTables.css"));
+                      "~/Scripts/datatables/media/css/jquery.dataTables.css"));
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862

@@ -1,7 +1,8 @@
 ﻿@{
     ViewBag.Title = "Table";
 }
-
+@Scripts.Render("~/bundles/datatables")
+@Scripts.Render("~/bundles/my")
 
 <h2>Table</h2>
 <table id="example" class="display">
@@ -486,6 +487,3 @@
         </tr>
     </tbody>
 </table>
-
-@Scripts.Render("~/bundles/datatables")
-@Scripts.Render("~/bundles/my")
