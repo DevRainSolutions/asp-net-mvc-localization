@@ -7,6 +7,7 @@ using System.Globalization;
 using asp_net_mvc_localization.Models;
 using System.ComponentModel.DataAnnotations;
 using asp_net_mvc_localization.Utils;
+using Newtonsoft.Json;
 
 namespace asp_net_mvc_localization.Controllers
 {
@@ -24,6 +25,25 @@ namespace asp_net_mvc_localization.Controllers
             if (ModelState.IsValid)
                 return Redirect("/");
             return View(tUser);
+        }
+
+        public ActionResult Table()
+        {
+            List<User> list = new List<User>();
+            for (int i = 0; i < 10; i++)
+            {
+                list.Add(new User()
+                {
+                    Age = 18+i,
+                    Email = "email"+i+"@gmail.com",
+                    Username = "name" + i,
+                    Birthday = DateTime.Today,
+                    Password = "password" + i,
+                    Rand = i
+                });
+            }
+            ViewData["list"] = list;
+            return View();
         }
 
         [HttpGet]
