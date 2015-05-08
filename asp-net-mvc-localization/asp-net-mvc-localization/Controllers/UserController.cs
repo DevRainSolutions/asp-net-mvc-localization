@@ -39,10 +39,10 @@ namespace asp_net_mvc_localization.Controllers
                     Username = "name" + i,
                     Birthday = DateTime.Today,
                     Password = "password" + i,
-                    Rand = i
+                    Rand = i + 1
                 });
             }
-            ViewData["list"] = list;
+            ViewData["list"] = JsonConvert.SerializeObject(list);
             return View();
         }
 

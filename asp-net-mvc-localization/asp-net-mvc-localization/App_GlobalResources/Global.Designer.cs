@@ -70,20 +70,20 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Back to List.
-        /// </summary>
-        internal static string Back {
-            get {
-                return ResourceManager.GetString("Back", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
         internal static string Create {
             get {
                 return ResourceManager.GetString("Create", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To list.
+        /// </summary>
+        internal static string ToList {
+            get {
+                return ResourceManager.GetString("ToList", resourceCulture);
             }
         }
         

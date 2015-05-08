@@ -120,11 +120,11 @@
   <data name="AppName" xml:space="preserve">
     <value>My ASP.NET Application</value>
   </data>
-  <data name="Back" xml:space="preserve">
-    <value>Back to List</value>
-  </data>
   <data name="Create" xml:space="preserve">
     <value>Create</value>
+  </data>
+  <data name="ToList" xml:space="preserve">
+    <value>To list</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>User</value>
