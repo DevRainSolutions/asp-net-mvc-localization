@@ -5,7 +5,6 @@
 
 <script>
     var dataSet = JSON.parse('@Html.Raw(ViewData["list"].ToString())');
-    var localization = JSON.parse('@Html.Raw(ViewData["language"].ToString())');
     $(document).ready(function () {
         $('#users').DataTable({
             data: dataSet,
@@ -33,7 +32,7 @@
     });
 </script>
 
-<h2>Table</h2>
+<h2>@Resources.TableResources.Table</h2>
 <table id="users" class="display">
     <thead>
         <tr>

@@ -4,6 +4,7 @@ using System.Web;
 using System.Web.Mvc;
 using asp_net_mvc_localization.Models;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using Resources;
 
 namespace asp_net_mvc_localization.Controllers
@@ -39,7 +40,10 @@ namespace asp_net_mvc_localization.Controllers
                     Rand = i + 1
                 });
             }
-            ViewData["list"] = JsonConvert.SerializeObject(list);
+            ViewData["list"] = JsonConvert.SerializeObject(list, Formatting.None, new IsoDateTimeConverter()
+            {
+                DateTimeFormat = "d"
+            });
             return View();
         }
 

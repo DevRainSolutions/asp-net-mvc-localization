@@ -159,4 +159,7 @@
   <data name="zeroRecords" xml:space="preserve">
     <value>Nothing found - sorry</value>
   </data>
+  <data name="Table" xml:space="preserve">
+    <value>Table</value>
+  </data>
 </root>

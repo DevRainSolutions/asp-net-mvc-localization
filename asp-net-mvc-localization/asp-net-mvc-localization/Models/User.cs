@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System;
 using asp_net_mvc_localization.Utils;
+using Newtonsoft.Json.Serialization;
 
 namespace asp_net_mvc_localization.Models
 {

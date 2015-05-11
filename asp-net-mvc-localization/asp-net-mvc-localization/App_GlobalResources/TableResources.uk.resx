@@ -159,4 +159,7 @@
   <data name="zeroRecords" xml:space="preserve">
     <value>Пусто</value>
   </data>
+  <data name="Table" xml:space="preserve">
+    <value>Таблиця</value>
+  </data>
 </root>
