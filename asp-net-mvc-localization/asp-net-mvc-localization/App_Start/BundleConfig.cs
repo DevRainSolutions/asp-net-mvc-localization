@@ -17,6 +17,9 @@ namespace asp_net_mvc_localization
             bundles.Add(new ScriptBundle("~/bundles/messages_uk").Include(
                         "~/Scripts/localization/messages_uk.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/datepicker-uk").Include(
+                        "~/Scripts/localization/datepicker-uk.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/datatables").Include(
                         "~/Scripts/datatables/jquery.dataTables.min.js"));
 
@@ -29,10 +32,14 @@ namespace asp_net_mvc_localization
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
+                      "~/Scripts/jquery-ui.min.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/Content/DataTables/css/jquery.dataTables.css"));
+                      "~/Content/DataTables/css/jquery.dataTables.css",
+                      "~/Content/jquery-ui.css"));
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
