@@ -24,7 +24,7 @@ namespace asp_net_mvc_localization
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            
+            /*
             //Provide ValidationAttributes localization with client-side validation
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RequiredAttribute), typeof(MyRequiredAttributeAdapter));
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RangeAttribute), typeof(MyRangeAttributeAdapter));
@@ -32,20 +32,20 @@ namespace asp_net_mvc_localization
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MaxLengthAttribute), typeof(MyMaxLengthAttributeAdapter));
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RegularExpressionAttribute), typeof(MyRegularExpressionAttributeAdapter));
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MyEmailAddressAttribute), typeof(MyEmailAddressAttributeAdapter));
-            //DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MyEmailAddressAttribute), typeof(MyEmailAddressAttribute)); 
+            */
             
 
             //Using universal Adapter, without client-side validation, because EmailAddressAttributeAdapter is not exist
             //DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MyEmailAddressAttribute), typeof(ValidationAttributeAdapter));
             
-            /*
+            
             //Provide ValidationAttributes localization without client-side validation
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RequiredAttribute), typeof(AttributeAdapters2.MySecRequiredAttributeAdapter));
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RangeAttribute), typeof(AttributeAdapters2.MySecRangeAttributeAdapter));
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MinLengthAttribute), typeof(AttributeAdapters2.MySecMinLengthAttributeAdapter));
             DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MaxLengthAttribute), typeof(AttributeAdapters2.MySecMaxLengthAttributeAdapter));
-            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RegularExpressionAttribute), typeof(AttributeAdapters2.MySecRegularExpressionAttributeAdapter)); 
-            */
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RegularExpressionAttribute), typeof(AttributeAdapters2.MySecRegularExpressionAttributeAdapter));
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(MyEmailAddressAttribute), typeof(MyEmailAddressAttributeAdapter));
 
             //Provide DisplayAttribute localization
             ModelMetadataProviders.Current = new ConventionalModelMetadataProvider(false, typeof (AttributeResources));

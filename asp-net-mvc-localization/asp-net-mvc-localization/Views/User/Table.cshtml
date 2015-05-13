@@ -1,20 +1,31 @@
-﻿@{
+﻿@using System.Web.Razor.Parser
+@using asp_net_mvc_localization.Controllers
+@using asp_net_mvc_localization.Models
+@using Newtonsoft.Json
+@using Newtonsoft.Json.Converters
+@model List<User>
+@{
+    string jsonText = JsonConvert.SerializeObject(Model, Formatting.None, new IsoDateTimeConverter
+    {
+        DateTimeFormat = "d"
+    });
     ViewBag.Title = "Table";
 }
+
 @Scripts.Render("~/bundles/datatables")
 
-<script>
-    var dataSet = JSON.parse('@Html.Raw(ViewData["list"].ToString())');
+<script>    
+    var dataSet = JSON.parse('@Html.Raw(jsonText)');
     $(document).ready(function () {
-        $('#users').DataTable({
+        $('.users-table').DataTable({
             data: dataSet,
             columns: [
-                { data: "Username", title: '@Resources.TableResources.UsernameTitle' },
-                { data: "Email", title: '@Resources.TableResources.EmailTitle' },
-                { data: "Password", title: '@Resources.TableResources.PasswordTitle' },
-                { data: "Age", title: '@Resources.TableResources.AgeTitle' },
-                { data: "Birthday", title: '@Resources.TableResources.BirthdayTitle' },
-                { data: "Rand", title: '@Resources.TableResources.RandTitle' }
+                { data: "Username"},
+                { data: "Email"},
+                { data: "Password"},
+                { data: "Age"},
+                { data: "Birthday"},
+                { data: "Rand"}
             ],
             oLanguage: {
                 oPaginate: {
@@ -33,15 +44,15 @@
 </script>
 
 <h2>@Resources.TableResources.Table</h2>
-<table id="users" class="display">
+<table id="users" class="users-table">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>E-mail</th>
-            <th>Password</th>
-            <th>Age</th>
-            <th>Birthday</th>
-            <th>Rand</th>
+            <th>@Resources.TableResources.UsernameTitle</th>
+            <th>@Resources.TableResources.EmailTitle</th>
+            <th>@Resources.TableResources.PasswordTitle</th>
+            <th>@Resources.TableResources.AgeTitle</th>
+            <th>@Resources.TableResources.BirthdayTitle</th>
+            <th>@Resources.TableResources.RandTitle</th>
         </tr>
     </thead>
 </table>

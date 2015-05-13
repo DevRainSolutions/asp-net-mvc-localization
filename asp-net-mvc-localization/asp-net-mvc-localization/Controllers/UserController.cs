@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Web;
 using System.Web.Mvc;
 using asp_net_mvc_localization.Models;
@@ -9,7 +10,7 @@ using Resources;
 
 namespace asp_net_mvc_localization.Controllers
 {
-    public class UserController : Controller
+    public class UserController : BaseController
     {
         [HttpGet]
         public ActionResult Create()
@@ -28,6 +29,7 @@ namespace asp_net_mvc_localization.Controllers
         public ActionResult Table()
         {
             List<User> list = new List<User>();
+           
             for (int i = 0; i < 10; i++)
             {
                 list.Add(new User()
@@ -40,22 +42,8 @@ namespace asp_net_mvc_localization.Controllers
                     Rand = i + 1
                 });
             }
-            ViewData["list"] = JsonConvert.SerializeObject(list, Formatting.None, new IsoDateTimeConverter()
-            {
-                DateTimeFormat = "d"
-            });
-            return View();
-        }
-
-        [HttpGet]
-        public ActionResult ChangeCulture(string lang, string returnUrl)
-        {
-            var langCookie = new HttpCookie("lang", lang)
-            {
-                HttpOnly = true
-            };
-            Response.AppendCookie(langCookie);
-            return Redirect(returnUrl);
+            
+            return View(list);
         }
     }
 }

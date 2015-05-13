@@ -5,16 +5,7 @@
 }
 <h2>@Resources.Global.Create</h2>
 <script>
-    $.validator.methods.range = function (value, element, param) {
-        var globalizedValue = value.replace(",", ".");
-        return this.optional(element) || (globalizedValue >= param[0] && globalizedValue <= param[1]);
-    }
-
-    $.validator.methods.number = function (value, element) {
-        return this.optional(element) || /^-?(?:\d+|\d{1,3}(?:[\s\.,]\d{3})+)(?:[\.,]\d+)?$/.test(value);
-    }
-
-    $(function() {
+    $(function () {
         $("#datepicker").datepicker();
         $("#datepicker").datepicker("setDate", "0");
     });
@@ -91,12 +82,8 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval"),
-    @if (Request.Cookies["lang"] != null)
+    @if (Culture != "en")
     {
-        if (Request.Cookies["lang"].Value == "uk")
-        {
-            @Scripts.Render("~/bundles/messages_uk")
-            @Scripts.Render("~/bundles/datepicker-uk")
-        }
+        @Scripts.Render("~/bundles/localization-{0}", Culture)
     }
 }

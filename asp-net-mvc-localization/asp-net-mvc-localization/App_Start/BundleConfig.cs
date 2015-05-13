@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System.Globalization;
+using System.Web;
 using System.Web.Optimization;
 
 namespace asp_net_mvc_localization
@@ -14,14 +15,8 @@ namespace asp_net_mvc_localization
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/messages_uk").Include(
-                        "~/Scripts/localization/messages_uk.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/datepicker-uk").Include(
-                        "~/Scripts/localization/datepicker-uk.js"));
-
             bundles.Add(new ScriptBundle("~/bundles/datatables").Include(
-                        "~/Scripts/datatables/jquery.dataTables.min.js"));
+                        "~/Scripts/datatables/jquery.dataTables.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -40,6 +35,14 @@ namespace asp_net_mvc_localization
                       "~/Content/site.css",
                       "~/Content/DataTables/css/jquery.dataTables.css",
                       "~/Content/jquery-ui.css"));
+
+            //Localization Bundles
+            string culture = CultureInfo.CurrentCulture.Name;
+            bundles.Add(new ScriptBundle("~/bundles/localization-{0}", culture).Include(
+                        "~/Scripts/localization/datepicker/datepicker-"+culture+".js",
+                        "~/Scripts/localization/validate/validate-"+culture+".js",
+                        "~/Scripts/localization/"+culture+".js"));
+
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
