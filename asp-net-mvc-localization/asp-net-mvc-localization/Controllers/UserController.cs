@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
+using System.Web.Security;
 using asp_net_mvc_localization.Models;
 
 namespace asp_net_mvc_localization.Controllers
@@ -24,8 +25,8 @@ namespace asp_net_mvc_localization.Controllers
         public ActionResult Table()
         {
             List<User> list = new List<User>();
-           
-            for (int i = 0; i < 10; i++)
+         
+            for (int i = 0; i < 1000; i++)
             {
                 list.Add(new User()
                 {
@@ -39,6 +40,11 @@ namespace asp_net_mvc_localization.Controllers
             }
             
             return View(list);
+        }
+
+        public string Test()
+        {
+            return ErrorCodeToString(MembershipCreateStatus.DuplicateUserName);
         }
     }
 }
