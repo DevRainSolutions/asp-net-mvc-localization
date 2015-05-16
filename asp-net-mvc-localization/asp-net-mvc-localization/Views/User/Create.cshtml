@@ -1,16 +1,15 @@
 ﻿@model asp_net_mvc_localization.Models.User
-
 @{
     ViewBag.Title = "Create";
 }
 <h2>@Resources.Global.Create</h2>
+
 <script>
     $(function () {
         $("#datepicker").datepicker();
         $("#datepicker").datepicker("setDate", "0");
     });
 </script>
-
 
 @using (Html.BeginForm())
 {
@@ -81,9 +80,10 @@
 </div>
 
 @section Scripts {
-    @Scripts.Render("~/bundles/jqueryval"),
-    @if (Culture != "en")
-    {
-        @Scripts.Render("~/bundles/localization-{0}", Culture)
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/jqueryui")
+        @if (Culture != "en")
+        {
+            @Scripts.Render("~/bundles/localization-" + Culture)
+        }
     }
-}

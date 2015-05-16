@@ -15,11 +15,14 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		My|Any CPU = My|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{00384DF6-437F-462A-9D10-55CFAF47872D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{00384DF6-437F-462A-9D10-55CFAF47872D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00384DF6-437F-462A-9D10-55CFAF47872D}.My|Any CPU.ActiveCfg = My|Any CPU
+		{00384DF6-437F-462A-9D10-55CFAF47872D}.My|Any CPU.Build.0 = My|Any CPU
 		{00384DF6-437F-462A-9D10-55CFAF47872D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00384DF6-437F-462A-9D10-55CFAF47872D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

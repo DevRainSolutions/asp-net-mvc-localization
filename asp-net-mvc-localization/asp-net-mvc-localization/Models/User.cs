@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System;
-using asp_net_mvc_localization.Utils;
 using Newtonsoft.Json.Serialization;
 
 namespace asp_net_mvc_localization.Models
@@ -11,7 +10,7 @@ namespace asp_net_mvc_localization.Models
         public string Username { get; set; }
 
         [Required]
-        [MyEmailAddress]
+        [EmailAddress(ErrorMessageResourceName = "MyEmailAddressAttribute", ErrorMessageResourceType = typeof(Resources.AttributeResources))]
         public string Email { get; set; }
                
         [Required]
