@@ -39,7 +39,7 @@ namespace asp_net_mvc_localization.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("asp_net_mvc_localization.App_GlobalResources.AttributeResources", typeof(AttributeResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("asp_net_mvc_localization.App_GlobalResources.User.AttributeResources", typeof(AttributeResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -88,6 +88,15 @@ namespace asp_net_mvc_localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The {0} field is not a valid e-mail address..
+        /// </summary>
+        public static string EmailAddressAttribute {
+            get {
+                return ResourceManager.GetString("EmailAddressAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The field {0} must be a date..
         /// </summary>
         public static string FieldMustBeDate {
@@ -120,15 +129,6 @@ namespace asp_net_mvc_localization.Resources {
         public static string MinLengthAttribute {
             get {
                 return ResourceManager.GetString("MinLengthAttribute", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The {0} field is not a valid e-mail address..
-        /// </summary>
-        public static string MyEmailAddressAttribute {
-            get {
-                return ResourceManager.GetString("MyEmailAddressAttribute", resourceCulture);
             }
         }
         

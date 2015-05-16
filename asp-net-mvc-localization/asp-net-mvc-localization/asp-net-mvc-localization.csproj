@@ -41,6 +41,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\User\AttributeResources.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttributeResources.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_GlobalResources\Global.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -51,22 +56,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Global.uk.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\AttributeResources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AttributeResources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\AttributeResources.uk.Designer.cs">
+    <Compile Include="App_GlobalResources\User\AttributeResources.uk.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AttributeResources.uk.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\TableResources.designer.cs">
+    <Compile Include="App_GlobalResources\Table\TableResources.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TableResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\TableResources.uk.designer.cs">
+    <Compile Include="App_GlobalResources\Table\TableResources.uk.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TableResources.uk.resx</DependentUpon>
@@ -152,15 +152,17 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="App_GlobalResources\Global.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
+    <EmbeddedResource Include="App_GlobalResources\Global.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Global.Designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Global.uk.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
+      <CustomToolNamespace>asp_net_mvc_localization.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Global.uk.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Global.uk.designer.cs</LastGenOutput>
-    </Content>
-    <EmbeddedResource Include="App_GlobalResources\AttributeResources.uk.resx">
+      <CustomToolNamespace>asp_net_mvc_localization.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\User\AttributeResources.uk.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AttributeResources.uk.Designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization.Resources</CustomToolNamespace>
@@ -190,14 +192,16 @@
     <Content Include="Scripts\datatables\jquery.dataTables.min.js" />
     <Content Include="Content\DataTables\css\dataTables.responsive.scss" />
     <Content Include="Content\DataTables\css\dataTables.jqueryui.scss" />
-    <Content Include="App_GlobalResources\TableResources.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
+    <EmbeddedResource Include="App_GlobalResources\Table\TableResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>TableResources.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\TableResources.uk.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
+      <CustomToolNamespace>asp_net_mvc_localization.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Table\TableResources.uk.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>TableResources.uk.designer.cs</LastGenOutput>
-    </Content>
+      <CustomToolNamespace>asp_net_mvc_localization.Resources</CustomToolNamespace>
+    </EmbeddedResource>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -207,9 +211,18 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\localization\datepicker\datepicker-de.js" />
+    <Content Include="Scripts\localization\datepicker\datepicker-fr.js" />
+    <Content Include="Scripts\localization\datepicker\datepicker-ru.js" />
     <Content Include="Scripts\localization\datepicker\datepicker-uk.js" />
+    <Content Include="Scripts\localization\de.js" />
+    <Content Include="Scripts\localization\fr.js" />
+    <Content Include="Scripts\localization\ru.js" />
     <Content Include="Scripts\localization\uk.js" />
-    <Content Include="Scripts\localization\validate\validate-uk.js" />
+    <Content Include="Scripts\localization\validate\messages_de.js" />
+    <Content Include="Scripts\localization\validate\messages_fr.js" />
+    <Content Include="Scripts\localization\validate\messages_ru.js" />
+    <Content Include="Scripts\localization\validate\messages_uk.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -240,9 +253,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="App_GlobalResources\AttributeResources.resx">
+    <EmbeddedResource Include="App_GlobalResources\User\AttributeResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>AttributeResources.Designer.cs</LastGenOutput>
+      <LastGenOutput>AttributeResources.designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization.Resources</CustomToolNamespace>
     </EmbeddedResource>
   </ItemGroup>

@@ -1,8 +1,7 @@
-﻿@using System.Web.Razor.Parser
-@using asp_net_mvc_localization.Controllers
-@using asp_net_mvc_localization.Models
+﻿@using asp_net_mvc_localization.Models
 @using Newtonsoft.Json
 @using Newtonsoft.Json.Converters
+@using asp_net_mvc_localization.Resources
 @model List<User>
 @{
     string jsonText = JsonConvert.SerializeObject(Model, Formatting.None, new IsoDateTimeConverter
@@ -29,30 +28,30 @@
             ],
             oLanguage: {
                 oPaginate: {
-                    sNext: '@Resources.TableResources.sNext',
-                    sPrevious: '@Resources.TableResources.sPrevious'
+                    sNext: '@TableResources.sNext',
+                    sPrevious: '@TableResources.sPrevious'
                 },
-                sSearch: '@Resources.TableResources.sSearch',
-                sLengthMenu: '@Resources.TableResources.lengthMenu',
-                sZeroRecords: '@Resources.TableResources.zeroRecords',
-                sInfoEmpy: '@Resources.TableResources.infoEmpty',
-                sInfo: '@Resources.TableResources.info',
-                sInfoFiltered: '@Resources.TableResources.infoFiltered'
+                sSearch: '@TableResources.sSearch',
+                sLengthMenu: '@TableResources.lengthMenu',
+                sZeroRecords: '@TableResources.zeroRecords',
+                sInfoEmpy: '@TableResources.infoEmpty',
+                sInfo: '@TableResources.info',
+                sInfoFiltered: '@TableResources.infoFiltered'
             }
         });
     });
 </script>
 
-<h2>@Resources.TableResources.Table</h2>
+<h2>@TableResources.Table</h2>
 <table id="users" class="users-table">
     <thead>
         <tr>
-            <th>@Resources.TableResources.UsernameTitle</th>
-            <th>@Resources.TableResources.EmailTitle</th>
-            <th>@Resources.TableResources.PasswordTitle</th>
-            <th>@Resources.TableResources.AgeTitle</th>
-            <th>@Resources.TableResources.BirthdayTitle</th>
-            <th>@Resources.TableResources.RandTitle</th>
+            <th>@TableResources.UsernameTitle</th>
+            <th>@TableResources.EmailTitle</th>
+            <th>@TableResources.PasswordTitle</th>
+            <th>@TableResources.AgeTitle</th>
+            <th>@TableResources.BirthdayTitle</th>
+            <th>@TableResources.RandTitle</th>
         </tr>
     </thead>
 </table>

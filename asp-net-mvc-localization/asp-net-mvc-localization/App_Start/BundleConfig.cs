@@ -41,20 +41,24 @@ namespace asp_net_mvc_localization
             // Add another cultures to array
             string[] cultures =
             {
-                "uk"
+                "uk",
+                "ru",
+                "de",
+                "fr"
             };
 
             cultures.ForEach(culture =>  
                 bundles.Add(new ScriptBundle("~/bundles/localization-"+culture).Include(
                         "~/Scripts/localization/datepicker/datepicker-"+culture+".js",
-                        "~/Scripts/localization/validate/validate-"+culture+".js",
+                        "~/Scripts/localization/validate/messages_"+culture+".js",
                         "~/Scripts/localization/"+culture+".js")));
            
 
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
-            BundleTable.EnableOptimizations = true;
+            //Disable for debug
+            //BundleTable.EnableOptimizations = true;
         }
     }
 }

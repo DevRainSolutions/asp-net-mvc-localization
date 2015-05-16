@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -9,13 +7,12 @@ using System.ComponentModel.DataAnnotations;
 using asp_net_mvc_localization.Utils;
 using System.Globalization;
 using System.Threading;
-using asp_net_mvc_localization.Resources;
 using ModelMetadataExtensions;
-using Resources;
+using asp_net_mvc_localization.Resources;
 
 namespace asp_net_mvc_localization
 {
-    public class MvcApplication : System.Web.HttpApplication
+    public class MvcApplication : HttpApplication
     {
         protected void Application_Start()
         {   

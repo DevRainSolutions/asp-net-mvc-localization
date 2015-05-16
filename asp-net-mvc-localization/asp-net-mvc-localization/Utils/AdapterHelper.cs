@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+using asp_net_mvc_localization.Resources;
 
 namespace asp_net_mvc_localization.Utils
 {
@@ -17,7 +15,7 @@ namespace asp_net_mvc_localization.Utils
         /// <param name="attribute">attribute that will be setting</param>
         public static void ChangeAttribute(ValidationAttribute attribute)
         {
-            attribute.ErrorMessageResourceType = typeof(Resources.AttributeResources);
+            attribute.ErrorMessageResourceType = typeof(AttributeResources);
             Type attributeType = attribute.GetType();
             attribute.ErrorMessageResourceName = attributeType.Name;
         }
