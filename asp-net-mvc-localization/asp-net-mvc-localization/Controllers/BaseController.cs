@@ -2,7 +2,7 @@
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
-using asp_net_mvc_localization.Resources;
+
 namespace asp_net_mvc_localization.Controllers
 {
     public abstract class BaseController : Controller
@@ -18,7 +18,7 @@ namespace asp_net_mvc_localization.Controllers
             return Redirect(returnUrl);
         }
 
-        public static string ErrorCodeToString(MembershipCreateStatus createStatus)
+        public string ErrorCodeToString(MembershipCreateStatus createStatus)
         {
             Type statusType = createStatus.GetType();
             return StatusErrors.ResourceManager.GetString(

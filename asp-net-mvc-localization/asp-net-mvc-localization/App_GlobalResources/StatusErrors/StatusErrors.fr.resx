@@ -118,39 +118,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DuplicateEmail" xml:space="preserve">
-    <value>Адреса електронної пошти вже існує в базі даних.</value>
+    <value>L'adresse de messagerie existe déjà dans la base de données pour l'application.</value>
   </data>
   <data name="DuplicateProviderUserKey" xml:space="preserve">
-    <value>Ключ користувача постачальника вже існує в базі даних.</value>
+    <value>La clé utilisateur du fournisseur existe déjà dans la base de données pour l'application.</value>
   </data>
   <data name="DuplicateUserName" xml:space="preserve">
-    <value>Ім'я користувача вже існує в базі даних.</value>
+    <value>Le nom d'utilisateur existe déjà dans la base de données pour l'application.</value>
   </data>
   <data name="InvalidAnswer" xml:space="preserve">
-    <value>Відповідь на контрольне запитання має невірний формат.</value>
+    <value>La réponse de mot de passe n'est pas mise en forme correctement.</value>
   </data>
   <data name="InvalidEmail" xml:space="preserve">
-    <value>Адреса електронної пошти має невірний формат.</value>
+    <value>L'adresse de messagerie n'est pas mise en forme correctement.</value>
   </data>
   <data name="InvalidPassword" xml:space="preserve">
-    <value>Пароль має невірний формат.</value>
+    <value>Le mot de passe n'est pas mis en forme correctement.</value>
   </data>
   <data name="InvalidProviderUserKey" xml:space="preserve">
-    <value>Постачальний використовує ключ, який має не дійсний тиа чи формат.</value>
+    <value>Le type ou le format de la clé utilisateur du fournisseur n'est pas valide.</value>
   </data>
   <data name="InvalidQuestion" xml:space="preserve">
-    <value>Контрольне питання має невірний формат.</value>
+    <value>La question de mot de passe n'est pas mise en forme correctement.</value>
   </data>
   <data name="InvalidUserName" xml:space="preserve">
-    <value>Ім'я користувача не було знайдено в базі даних.</value>
+    <value>Le nom d'utilisateur est introuvable dans la base de données.</value>
   </data>
   <data name="ProviderError" xml:space="preserve">
-    <value>Постачальник повернув помилку, яка не описана іншими значеннями MembershipCreateStatus.</value>
+    <value>Le fournisseur a retourné une erreur qui n'est pas décrite par les autres valeurs d'énumération MembershipCreateStatus.</value>
   </data>
   <data name="Success" xml:space="preserve">
-    <value>Користувача успішно створено.</value>
+    <value>L'utilisateur a été correctement créé.</value>
   </data>
   <data name="UserRejected" xml:space="preserve">
-    <value>Користувача не успішно сворено через відмову постачальника.</value>
+    <value>L'utilisateur n'a pas été créé pour une raison définie par le fournisseur.</value>
   </data>
 </root>

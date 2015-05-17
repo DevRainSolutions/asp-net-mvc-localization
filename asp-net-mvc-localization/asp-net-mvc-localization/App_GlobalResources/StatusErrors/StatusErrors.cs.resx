@@ -118,39 +118,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DuplicateEmail" xml:space="preserve">
-    <value>Адреса електронної пошти вже існує в базі даних.</value>
+    <value>E-mailová adresa již existuje v databázi aplikace.</value>
   </data>
   <data name="DuplicateProviderUserKey" xml:space="preserve">
-    <value>Ключ користувача постачальника вже існує в базі даних.</value>
+    <value>Uživatelský klíč zprostředkovatele je již v databázi aplikace.</value>
   </data>
   <data name="DuplicateUserName" xml:space="preserve">
-    <value>Ім'я користувача вже існує в базі даних.</value>
+    <value>Uživatelské jméno již existuje v databázi aplikace.</value>
   </data>
   <data name="InvalidAnswer" xml:space="preserve">
-    <value>Відповідь на контрольне запитання має невірний формат.</value>
+    <value>Odpověď hesla není správně formátován.</value>
   </data>
   <data name="InvalidEmail" xml:space="preserve">
-    <value>Адреса електронної пошти має невірний формат.</value>
+    <value>E-mailová adresa není správně formátován.</value>
   </data>
   <data name="InvalidPassword" xml:space="preserve">
-    <value>Пароль має невірний формат.</value>
+    <value>Heslo není správně formátován.</value>
   </data>
   <data name="InvalidProviderUserKey" xml:space="preserve">
-    <value>Постачальний використовує ключ, який має не дійсний тиа чи формат.</value>
+    <value>Uživatelský klíč zprostředkovatele je neplatný typ nebo formát.</value>
   </data>
   <data name="InvalidQuestion" xml:space="preserve">
-    <value>Контрольне питання має невірний формат.</value>
+    <value>Otázka hesla není správně naformátován.</value>
   </data>
   <data name="InvalidUserName" xml:space="preserve">
-    <value>Ім'я користувача не було знайдено в базі даних.</value>
+    <value>Uživatelské jméno v databázi nebyl nalezen.</value>
   </data>
   <data name="ProviderError" xml:space="preserve">
-    <value>Постачальник повернув помилку, яка не описана іншими значеннями MembershipCreateStatus.</value>
+    <value>Zprostředkovatel vrátil chybu, které nejsou popsány v další MembershipCreateStatus hodnoty výčtu.</value>
   </data>
   <data name="Success" xml:space="preserve">
-    <value>Користувача успішно створено.</value>
+    <value>Uživatel byl úspěšně vytvořen.</value>
   </data>
   <data name="UserRejected" xml:space="preserve">
-    <value>Користувача не успішно сворено через відмову постачальника.</value>
+    <value>Uživatel nebyl vytvořen, z důvodu zprostředkovatele definován.</value>
   </data>
 </root>

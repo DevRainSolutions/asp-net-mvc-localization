@@ -41,10 +41,40 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.cs.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusErrors.cs.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.de.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusErrors.de.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.designer.cs">
       <DependentUpon>StatusErrors.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.es.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusErrors.es.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.fr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusErrors.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.it.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusErrors.it.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusErrors.ru.resx</DependentUpon>
     </Compile>
     <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.uk.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -172,11 +202,40 @@
       <LastGenOutput>Global.uk.designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization.Resources</CustomToolNamespace>
     </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.de.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusErrors.de.designer.cs</LastGenOutput>
+      <CustomToolNamespace>asp_net_mvc_localization</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusErrors.fr.designer.cs</LastGenOutput>
+      <CustomToolNamespace>asp_net_mvc_localization</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusErrors.es.designer.cs</LastGenOutput>
+      <CustomToolNamespace>asp_net_mvc_localization</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.cs.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusErrors.cs.designer.cs</LastGenOutput>
+      <CustomToolNamespace>asp_net_mvc_localization</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.it.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusErrors.it.designer.cs</LastGenOutput>
+      <CustomToolNamespace>asp_net_mvc_localization</CustomToolNamespace>
+    </EmbeddedResource>
     <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>StatusErrors.designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization</CustomToolNamespace>
     </EmbeddedResource>
+    <Content Include="App_GlobalResources\StatusErrors\StatusErrors.ru.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>StatusErrors.ru.designer.cs</LastGenOutput>
+    </Content>
     <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.uk.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>StatusErrors.uk.Designer.cs</LastGenOutput>
