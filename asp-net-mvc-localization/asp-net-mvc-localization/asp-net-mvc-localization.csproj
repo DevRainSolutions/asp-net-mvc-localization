@@ -41,6 +41,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\DataAnnotations.uk.designer.cs">
+      <DependentUpon>DataAnnotations.uk.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App_GlobalResources\DataAnnotations.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -200,6 +205,10 @@
     <Content Include="App_GlobalResources\DataAnnotations.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>DataAnnotations.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\DataAnnotations.uk.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DataAnnotations.uk.designer.cs</LastGenOutput>
     </Content>
     <EmbeddedResource Include="App_GlobalResources\Global.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

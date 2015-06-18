@@ -21,7 +21,7 @@ namespace asp_net_mvc_localization.Controllers
         public string ErrorCodeToString(MembershipCreateStatus createStatus)
         {
             Type statusType = createStatus.GetType();
-            return StatusErrors.ResourceManager.GetString(
+            return MembershipCreateStatusMessages.ResourceManager.GetString(
                 statusType.GetEnumName(createStatus));
         }
     }

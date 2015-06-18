@@ -88,65 +88,11 @@ namespace asp_net_mvc_localization.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The {0} field is not a valid e-mail address..
-        /// </summary>
-        public static string EmailAddressAttribute {
-            get {
-                return ResourceManager.GetString("EmailAddressAttribute", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The field {0} must be a date..
-        /// </summary>
-        public static string FieldMustBeDate {
-            get {
-                return ResourceManager.GetString("FieldMustBeDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The field {0} must be a number..
-        /// </summary>
-        public static string FieldMustBeNumeric {
-            get {
-                return ResourceManager.GetString("FieldMustBeNumeric", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The field {0} must be a string with a maximum length of &apos;{1}&apos;..
-        /// </summary>
-        public static string MaxLengthAttribute {
-            get {
-                return ResourceManager.GetString("MaxLengthAttribute", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The field {0} must be a string with a minimum length of &apos;{1}&apos;..
-        /// </summary>
-        public static string MinLengthAttribute {
-            get {
-                return ResourceManager.GetString("MinLengthAttribute", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         public static string Password {
             get {
                 return ResourceManager.GetString("Password", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The value &apos;{0}&apos; is not valid for {1}..
-        /// </summary>
-        public static string PropertyValueInvalid {
-            get {
-                return ResourceManager.GetString("PropertyValueInvalid", resourceCulture);
             }
         }
         
@@ -160,29 +106,11 @@ namespace asp_net_mvc_localization.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The field {0} must be between {1} and {2}..
-        /// </summary>
-        public static string RangeAttribute {
-            get {
-                return ResourceManager.GetString("RangeAttribute", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Incorrect.
         /// </summary>
         public static string RegularExpressionAttribute {
             get {
                 return ResourceManager.GetString("RegularExpressionAttribute", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Required field {0}.
-        /// </summary>
-        public static string RequiredAttribute {
-            get {
-                return ResourceManager.GetString("RequiredAttribute", resourceCulture);
             }
         }
         

@@ -45,7 +45,7 @@ namespace asp_net_mvc_localization
             //Provide DisplayAttribute localization
             ModelMetadataProviders.Current = new ConventionalModelMetadataProvider(false, typeof(AttributeResources));
 
-            ClientDataTypeModelValidatorProvider.ResourceClassKey = "AttributeResources";
+            ClientDataTypeModelValidatorProvider.ResourceClassKey = "DataAnnotations";
         }
 
         protected void Application_AcquireRequestState(object sender, EventArgs e)

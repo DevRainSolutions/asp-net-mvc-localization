@@ -117,25 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Age" xml:space="preserve">
-    <value>Age</value>
+  <data name="EmailAddressAttribute" xml:space="preserve">
+    <value>Поле {0} не є e-mail адресою.</value>
   </data>
-  <data name="Birthday" xml:space="preserve">
-    <value>Birthday</value>
+  <data name="FieldMustBeDate" xml:space="preserve">
+    <value>Поле {0} повинно бути датою.</value>
   </data>
-  <data name="Email" xml:space="preserve">
-    <value>Email</value>
+  <data name="FieldMustBeNumeric" xml:space="preserve">
+    <value>Поле {0} повинно бути числом.</value>
   </data>
-  <data name="Password" xml:space="preserve">
-    <value>Password</value>
+  <data name="MaxLengthAttribute" xml:space="preserve">
+    <value>Поле {0} повинно бути рядком з максимальною довжиною: '{1}'.</value>
   </data>
-  <data name="Rand" xml:space="preserve">
-    <value>Random number</value>
+  <data name="MinLengthAttribute" xml:space="preserve">
+    <value>Поле {0} повинно бути рядком з мінімальною довжиною: '{1}'.</value>
   </data>
-  <data name="RegularExpressionAttribute" xml:space="preserve">
-    <value>Incorrect</value>
+  <data name="PropertyValueInvalid" xml:space="preserve">
+    <value>Значення '{0}' не коректне для {1}.</value>
   </data>
-  <data name="Username" xml:space="preserve">
-    <value>Username</value>
+  <data name="RangeAttribute" xml:space="preserve">
+    <value>Поле {0} повинно бути між {1} та {2}.</value>
+  </data>
+  <data name="RequiredAttribute" xml:space="preserve">
+    <value>Поле {0} обов'язкове.</value>
   </data>
 </root>

@@ -59,5 +59,77 @@ namespace Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The {0} field is not a valid e-mail address..
+        /// </summary>
+        internal static string EmailAddressAttribute {
+            get {
+                return ResourceManager.GetString("EmailAddressAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The field {0} must be a date..
+        /// </summary>
+        internal static string FieldMustBeDate {
+            get {
+                return ResourceManager.GetString("FieldMustBeDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The field {0} must be a number..
+        /// </summary>
+        internal static string FieldMustBeNumeric {
+            get {
+                return ResourceManager.GetString("FieldMustBeNumeric", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The field {0} must be a string with a maximum length of &apos;{1}&apos;..
+        /// </summary>
+        internal static string MaxLengthAttribute {
+            get {
+                return ResourceManager.GetString("MaxLengthAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The field {0} must be a string with a minimum length of &apos;{1}&apos;..
+        /// </summary>
+        internal static string MinLengthAttribute {
+            get {
+                return ResourceManager.GetString("MinLengthAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The value &apos;{0}&apos; is not valid for {1}..
+        /// </summary>
+        internal static string PropertyValueInvalid {
+            get {
+                return ResourceManager.GetString("PropertyValueInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The field {0} must be between {1} and {2}..
+        /// </summary>
+        internal static string RangeAttribute {
+            get {
+                return ResourceManager.GetString("RangeAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Required field {0}.
+        /// </summary>
+        internal static string RequiredAttribute {
+            get {
+                return ResourceManager.GetString("RequiredAttribute", resourceCulture);
+            }
+        }
     }
 }
