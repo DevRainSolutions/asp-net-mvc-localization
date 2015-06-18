@@ -41,45 +41,50 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.cs.designer.cs">
+    <Compile Include="App_GlobalResources\DataAnnotations.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StatusErrors.cs.resx</DependentUpon>
+      <DependentUpon>DataAnnotations.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.de.designer.cs">
+    <Compile Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.cs.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StatusErrors.de.resx</DependentUpon>
+      <DependentUpon>MembershipCreateStatusMessages.cs.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.designer.cs">
-      <DependentUpon>StatusErrors.resx</DependentUpon>
+    <Compile Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.de.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MembershipCreateStatusMessages.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.Designer.cs">
+      <DependentUpon>MembershipCreateStatusMessages.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.es.designer.cs">
+    <Compile Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.es.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StatusErrors.es.resx</DependentUpon>
+      <DependentUpon>MembershipCreateStatusMessages.es.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.fr.designer.cs">
+    <Compile Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.fr.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StatusErrors.fr.resx</DependentUpon>
+      <DependentUpon>MembershipCreateStatusMessages.fr.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.it.designer.cs">
+    <Compile Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.it.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StatusErrors.it.resx</DependentUpon>
+      <DependentUpon>MembershipCreateStatusMessages.it.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.ru.designer.cs">
+    <Compile Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.ru.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StatusErrors.ru.resx</DependentUpon>
+      <DependentUpon>MembershipCreateStatusMessages.ru.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\StatusErrors\StatusErrors.uk.Designer.cs">
+    <Compile Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.uk.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StatusErrors.uk.resx</DependentUpon>
+      <DependentUpon>MembershipCreateStatusMessages.uk.resx</DependentUpon>
     </Compile>
     <Compile Include="App_GlobalResources\User\AttributeResources.designer.cs">
       <AutoGen>True</AutoGen>
@@ -192,6 +197,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="App_GlobalResources\DataAnnotations.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DataAnnotations.Designer.cs</LastGenOutput>
+    </Content>
     <EmbeddedResource Include="App_GlobalResources\Global.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Global.Designer.cs</LastGenOutput>
@@ -202,43 +211,43 @@
       <LastGenOutput>Global.uk.designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization.Resources</CustomToolNamespace>
     </EmbeddedResource>
-    <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.de.resx">
+    <EmbeddedResource Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.de.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>StatusErrors.de.designer.cs</LastGenOutput>
+      <LastGenOutput>MembershipCreateStatusMessages.de.Designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization</CustomToolNamespace>
     </EmbeddedResource>
-    <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.fr.resx">
+    <EmbeddedResource Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>StatusErrors.fr.designer.cs</LastGenOutput>
+      <LastGenOutput>MembershipCreateStatusMessages.fr.Designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization</CustomToolNamespace>
     </EmbeddedResource>
-    <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.es.resx">
+    <EmbeddedResource Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.es.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>StatusErrors.es.designer.cs</LastGenOutput>
+      <LastGenOutput>MembershipCreateStatusMessages.es.Designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization</CustomToolNamespace>
     </EmbeddedResource>
-    <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.cs.resx">
+    <EmbeddedResource Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.cs.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>StatusErrors.cs.designer.cs</LastGenOutput>
+      <LastGenOutput>MembershipCreateStatusMessages.cs.Designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization</CustomToolNamespace>
     </EmbeddedResource>
-    <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.it.resx">
+    <EmbeddedResource Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.it.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>StatusErrors.it.designer.cs</LastGenOutput>
+      <LastGenOutput>MembershipCreateStatusMessages.it.Designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization</CustomToolNamespace>
     </EmbeddedResource>
-    <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.resx">
+    <EmbeddedResource Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>StatusErrors.designer.cs</LastGenOutput>
+      <LastGenOutput>MembershipCreateStatusMessages.Designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization</CustomToolNamespace>
     </EmbeddedResource>
-    <Content Include="App_GlobalResources\StatusErrors\StatusErrors.ru.resx">
+    <Content Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.ru.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>StatusErrors.ru.designer.cs</LastGenOutput>
+      <LastGenOutput>MembershipCreateStatusMessages.ru.designer.cs</LastGenOutput>
     </Content>
-    <EmbeddedResource Include="App_GlobalResources\StatusErrors\StatusErrors.uk.resx">
+    <EmbeddedResource Include="App_GlobalResources\StatusErrors\MembershipCreateStatusMessages.uk.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>StatusErrors.uk.Designer.cs</LastGenOutput>
+      <LastGenOutput>MembershipCreateStatusMessages.uk.Designer.cs</LastGenOutput>
       <CustomToolNamespace>asp_net_mvc_localization.Resources</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="App_GlobalResources\User\AttributeResources.uk.resx">
