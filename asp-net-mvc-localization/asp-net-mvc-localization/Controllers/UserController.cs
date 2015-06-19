@@ -11,11 +11,11 @@ namespace asp_net_mvc_localization.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            User tUser = new User();
+            Account tUser = new Account();
             return View(tUser);
         }
 
-        public ActionResult Create(User tUser)
+        public ActionResult Create(Account tUser)
         {
             if (ModelState.IsValid)
                 return Redirect("/");
@@ -24,11 +24,11 @@ namespace asp_net_mvc_localization.Controllers
 
         public ActionResult Table()
         {
-            List<User> list = new List<User>();
+            List<Account> list = new List<Account>();
          
             for (int i = 0; i < 1000; i++)
             {
-                list.Add(new User()
+                list.Add(new Account()
                 {
                     Age = 18+i,
                     Email = "email"+i+"@gmail.com",
@@ -40,6 +40,11 @@ namespace asp_net_mvc_localization.Controllers
             }
             
             return View(list);
+        }
+
+        public ActionResult DateExample()
+        {
+            return View();
         }
 
         public string Test()

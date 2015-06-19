@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using asp_net_mvc_localization.Resources;
+using Resources;
 
 namespace asp_net_mvc_localization.Utils
 {
@@ -15,7 +15,7 @@ namespace asp_net_mvc_localization.Utils
         /// <param name="attribute">attribute that will be setting</param>
         public static void ChangeAttribute(ValidationAttribute attribute)
         {
-            attribute.ErrorMessageResourceType = typeof(AttributeResources);
+            attribute.ErrorMessageResourceType = typeof(DataAnnotations);
             Type attributeType = attribute.GetType();
             attribute.ErrorMessageResourceName = attributeType.Name;
         }

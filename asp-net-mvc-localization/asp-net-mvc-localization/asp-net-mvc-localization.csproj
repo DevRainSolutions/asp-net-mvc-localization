@@ -131,7 +131,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Utils\AdapterHelper.cs" />
@@ -338,6 +338,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\User\Table.cshtml" />
+    <Content Include="Views\User\DateExample.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

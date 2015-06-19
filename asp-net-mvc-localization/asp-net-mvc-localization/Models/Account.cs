@@ -3,7 +3,7 @@ using System;
 
 namespace asp_net_mvc_localization.Models
 {
-    public class User
+    public class Account
     {
         [Required]
         public string Username { get; set; }

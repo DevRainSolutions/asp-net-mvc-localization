@@ -2,7 +2,7 @@
 @using Newtonsoft.Json
 @using Newtonsoft.Json.Converters
 @using asp_net_mvc_localization.Resources
-@model List<User>
+@model List<Account>
 @{
     string jsonText = JsonConvert.SerializeObject(Model, Formatting.None, new IsoDateTimeConverter
     {
