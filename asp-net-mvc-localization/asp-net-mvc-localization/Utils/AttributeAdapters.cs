@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Resources;
 using System.Web.Mvc;
 
 namespace asp_net_mvc_localization.Utils
@@ -87,4 +90,27 @@ namespace asp_net_mvc_localization.Utils
         }
     }
     #endregion
+}
+
+public class LocalizedDescriptionAttribute : DescriptionAttribute
+{
+    private readonly string _resourceKey;
+    private readonly ResourceManager _resource;
+    public LocalizedDescriptionAttribute(string resourceKey, Type resourceType)
+    {
+        _resource = new ResourceManager(resourceType);
+        _resourceKey = resourceKey;
+    }
+
+    public override string Description
+    {
+        get
+        {
+            string displayName = _resource.GetString(_resourceKey);
+
+            return string.IsNullOrEmpty(displayName)
+                ? string.Format("[[{0}]]", _resourceKey)
+                : displayName;
+        }
+    }
 }
